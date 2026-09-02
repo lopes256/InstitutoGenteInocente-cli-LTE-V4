@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Comandos
+
+ng g module template --routing
+ng g c template/control-sidebar --skip-tests
+ng g c template/footer --skip-tests
+ng g c template/main-sidebar --skip-tests
+ng g c template/navbar --skip-tests
+
+ng g component dashboard --skip-tests
+
+ng g component layout --skip-tests
+
+ng g module security --routing
+ng g c security/users --skip-tests
+ng g c security/usergroup --skip-tests
+ng g c security/usersform --skip-tests
+ng g c security/usergroupform --skip-tests

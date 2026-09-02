@@ -25,9 +25,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/adminlte.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/overlayscrollbars.browser.es6.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/adminlte.js",
+              "src/assets/js/OverlayScrollbars.js",
+              "src/assets/js/Charts.js",
+              "src/assets/js/tabulator.min.js"
+            ]
           },
           "configurations": {
             "production": {
