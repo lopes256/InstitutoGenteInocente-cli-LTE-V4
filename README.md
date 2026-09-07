@@ -43,3 +43,8 @@ ng g c security/users --skip-tests
 ng g c security/usergroup --skip-tests
 ng g c security/usersform --skip-tests
 ng g c security/usergroupform --skip-tests
+
+ng g module people --routing
+ng g c people/person --skip-tests
+ng g c people/person-from --skip-tests
+

@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SecurityModule } from './security/security.module';
 import { TemplateModule } from './template/template.module';
+import { PeopleModule } from './people/people.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TemplateModule } from './template/template.module';
     BrowserModule,
     AppRoutingModule,
     TemplateModule,
-    SecurityModule
+    SecurityModule,
+    PeopleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class UsersComponent {
 
+  tituloPag: string = 'Usuários';
+  numeroPagina: number = 0;
+  
+
 }
