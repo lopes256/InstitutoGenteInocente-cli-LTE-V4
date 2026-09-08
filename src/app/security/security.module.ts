@@ -6,6 +6,8 @@ import { UsersComponent } from './users/users.component';
 import { UsergroupComponent } from './usergroup/usergroup.component';
 import { UsersformComponent } from './usersform/usersform.component';
 import { UsergroupformComponent } from './usergroupform/usergroupform.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { UsergroupformComponent } from './usergroupform/usergroupform.component'
     UsersComponent,
     UsergroupComponent,
     UsersformComponent,
-    UsergroupformComponent
+    UsergroupformComponent,
+    UserprofileComponent,
+    ChangepasswordComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import { UsergroupformComponent } from './usergroupform/usergroupform.component'
     UsersComponent,
     UsergroupComponent,
     UsersformComponent,
-    UsergroupformComponent
+    UsergroupformComponent,
+    UserprofileComponent,
+    ChangepasswordComponent
   ]
 })
 export class SecurityModule { }

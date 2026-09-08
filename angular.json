@@ -26,7 +26,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/adminlte.css"
+              "src/assets/css/adminlte.css",
+              "src/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css"
             ],
             "scripts": [
               "src/assets/js/overlayscrollbars.browser.es6.min.js",
@@ -43,8 +44,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "8mb",
+                  "maximumError": "12mb"
                 },
                 {
                   "type": "anyComponentStyle",

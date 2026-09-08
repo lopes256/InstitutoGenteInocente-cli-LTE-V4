@@ -1,0 +1,45 @@
+<body class="login-page bg-body-secondary">
+    <main class="login-box">
+        <h1 class="login-logo">
+            <a routerLink="/dashboard"><b>Gente Inocente</b>IGI</a>
+        </h1>
+
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Faça login para iniciar sua sessão</p>
+
+            <form #loginForm="ngForm" id="loginForm" (ngSubmit)="onSubmitLogin()">
+                <label class="visually-hidden" for="loginEmail">Email</label>
+                <div class="input-group mb-3">
+                    <input id="loginEmail" name="loginEmail" type="email" class="form-control" placeholder="Email" [(ngModel)]="loginUsuario" />
+                    <div class="input-group-text">
+                        <span class="bi bi-envelope"></span>
+                    </div>
+                </div>
+                <label class="visually-hidden" for="loginPassword">Password</label>
+                <div class="input-group mb-3">
+                    <input id="loginPassword" name="loginPassword" type="password" class="form-control" placeholder="Password" [(ngModel)]="password" />
+                    <div class="input-group-text">
+                        <span class="bi bi-lock-fill"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="rememberMe" [(ngModel)]="rememberMe"/>
+                            <label class="form-check-label" for="flexCheckDefault"> Remember Me </label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p class="mb-1">
+                <a href="forgot-password.html">I forgot my password</a>
+            </p>
+        </div>
+
+    </main>
+</body>

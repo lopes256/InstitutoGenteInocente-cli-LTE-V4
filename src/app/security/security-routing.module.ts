@@ -5,6 +5,8 @@ import { UsergroupComponent } from './usergroup/usergroup.component';
 import { UsergroupformComponent } from './usergroupform/usergroupform.component';
 import { UsersComponent } from './users/users.component';
 import { UsersformComponent } from './usersform/usersform.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 const routes: Routes = [{
   path: 'usergroup', component: LayoutComponent,
@@ -22,6 +24,20 @@ const routes: Routes = [{
     { path: 'form', component: UsersformComponent },
     { path: 'form/:loginUser', component: UsersformComponent },
     { path: '', redirectTo: 'list', pathMatch: 'full' }
+  ]
+},
+{
+  path: 'userprofile', component: LayoutComponent,
+  children: [
+    { path: 'form/:loginUser', component: UserprofileComponent },
+    { path: '', redirectTo: 'form/defaultUser', pathMatch: 'full' }
+  ]
+},
+{
+  path: 'changepassword', component: LayoutComponent,
+  children: [
+    { path: 'form/:loginUser', component: ChangepasswordComponent },
+    { path: '', redirectTo: 'form/defaultUser', pathMatch: 'full' }
   ]
 }];
 
