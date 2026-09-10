@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { firstValueFrom, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { Router } from '@angular/router';
 
@@ -29,7 +29,6 @@ export class AuthService {
       const expirated = this.jwtHelper.isTokenExpired(tokenString);
       return !expirated;
     } else {
-      this.doLogOut();
       return false;
     }
   }
@@ -40,16 +39,12 @@ export class AuthService {
     this.router.navigate(['/login']);
   }
 
-  async doLoginUser(emailUsuarioRequest: string, passwordRequest: string): Promise<IAccessToken> {
-    try {
-      let loginRequest: ILogin = {
-        emailUsuario: emailUsuarioRequest,
-        password: passwordRequest
-      };
-      return firstValueFrom(this.http.post<IAccessToken>(this.tokenURL, loginRequest));
-    } catch (error) {
-      throw error;
-    }
+  doLoginUser(emailUsuarioRequest: string, passwordRequest: string): Observable<IAccessToken> {
+    const loginRequest: ILogin = {
+      emailUsuario: emailUsuarioRequest,
+      password: passwordRequest
+    };
+    return this.http.post<IAccessToken>(this.tokenURL, loginRequest);
   }
 
 }

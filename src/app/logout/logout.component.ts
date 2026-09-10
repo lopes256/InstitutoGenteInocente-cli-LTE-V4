@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
 
@@ -7,19 +7,14 @@ import { AuthService } from '../auth.service';
   templateUrl: './logout.component.html',
   styleUrls: ['./logout.component.css']
 })
-export class LogoutComponent implements OnInit, AfterViewInit{
+export class LogoutComponent implements OnInit {
 
   constructor(
     private router: Router,
-    private auth: AuthService) { 
+    private auth: AuthService) { }
 
-    }
-    
-    ngOnInit(): void {
-    alert("Você será deslogado do sistema!");
+  ngOnInit(): void {
     this.auth.doLogOut();
   }
-
-  ngAfterViewInit(): void {}
 
 }

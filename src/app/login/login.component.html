@@ -7,7 +7,7 @@
         <div class="card-body login-card-body">
             <p class="login-box-msg">Faça login para iniciar sua sessão</p>
 
-            <form #loginForm="ngForm" id="loginForm" (ngSubmit)="onSubmitLogin()">
+            <form #loginForm="ngForm" id="loginForm" (ngSubmit)="onSubmit()">
                 <label class="visually-hidden" for="loginEmail">Email</label>
                 <div class="input-group mb-3">
                     <input id="loginEmail" name="loginEmail" type="email" class="form-control" placeholder="Email" [(ngModel)]="loginUsuario" />
@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-8">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="rememberMe" [(ngModel)]="rememberMe"/>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" name="rememberMe" [(ngModel)]="remember"/>
                             <label class="form-check-label" for="flexCheckDefault"> Remember Me </label>
                         </div>
                     </div>
