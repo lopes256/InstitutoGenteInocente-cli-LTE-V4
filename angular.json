@@ -27,7 +27,8 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/adminlte.css",
-              "src/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css"
+              "src/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css",
+              "src/assets/plugins/DataTables/datatables.min.css"
             ],
             "scripts": [
               "src/assets/js/overlayscrollbars.browser.es6.min.js",
@@ -36,7 +37,8 @@
               "src/assets/js/adminlte.js",
               "src/assets/js/OverlayScrollbars.js",
               "src/assets/js/Charts.js",
-              "src/assets/js/tabulator.min.js"
+              "src/assets/js/tabulator.min.js",
+              "src/assets/plugins/DataTables/datatables.min.js"
             ]
           },
           "configurations": {
