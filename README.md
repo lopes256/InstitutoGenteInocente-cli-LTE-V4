@@ -29,40 +29,40 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Comandos
 
 
-ng g module template --routing
-ng g c template/control-sidebar --skip-tests
-ng g c template/footer --skip-tests
-ng g c template/main-sidebar --skip-tests
-ng g c template/navbar --skip-tests
+ng g module template --routing  
+ng g c template/control-sidebar --skip-tests  
+ng g c template/footer --skip-tests  
+ng g c template/main-sidebar --skip-tests  
+ng g c template/navbar --skip-tests  
 
-ng g component dashboard --skip-tests
+ng g component dashboard --skip-tests  
 
-ng g component layout --skip-tests
-ng g component login --skip-tests
-ng g component logout --skip-tests
+ng g component layout --skip-tests  
+ng g component login --skip-tests  
+ng g component logout --skip-tests  
 
-ng g service utils/data-service --skip-tests
-ng g service utils/data-utils --skip-tests
-ng g service utils/token-utils --skip-tests
+ng g service utils/data-service --skip-tests  
+ng g service utils/data-utils --skip-tests  
+ng g service utils/token-utils --skip-tests  
 
-ng g service auth --skip-tests
-ng g service auth-interceptor --skip-tests
-ng g guard auth --skip-tests    -> CanActivate
+ng g service auth --skip-tests  
+ng g service auth-interceptor --skip-tests  
+ng g guard auth --skip-tests    -> CanActivate  
 
-ng g interface interfaces/i-login
-ng g interface interfaces/i-token
-ng g interface interfaces/i-access-token
+ng g interface interfaces/i-login  
+ng g interface interfaces/i-token  
+ng g interface interfaces/i-access-token  
 
-ng g module security --routing
-ng g service security/security --skip-tests
-ng g c security/users --skip-tests
-ng g c security/usergroup --skip-tests
-ng g c security/usersform --skip-tests
-ng g c security/usergroupform --skip-tests
-ng g c security/userprofile --skip-tests
-ng g c security/change-password --skip-tests
+ng g module security --routing  
+ng g service security/security --skip-tests  
+ng g c security/users --skip-tests  
+ng g c security/usergroup --skip-tests  
+ng g c security/usersform --skip-tests  
+ng g c security/usergroupform --skip-tests  
+ng g c security/userprofile --skip-tests  
+ng g c security/change-password --skip-tests  
 
-ng g module people --routing
-ng g c people/person --skip-tests
-ng g c people/person-from --skip-tests
+ng g module people --routing  
+ng g c people/person --skip-tests  
+ng g c people/person-from --skip-tests  
 
