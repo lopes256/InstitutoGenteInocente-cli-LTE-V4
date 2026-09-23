@@ -1,6 +1,37 @@
 # Igilte491
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.  
+
+## Verifique sua versão atual
+
+node --version   
+npm --version  
+
+## Instale o NVM
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash  
+source ~/.bashrc  
+nvm --version  
+source ~/.zshrc  
+
+## Instale o Node.js 18.10.0
+
+nvm install 18.10.0  
+nvm use 18.10.0  
+node --version  
+
+## Torne o Node 18.10.0 padrão
+
+nvm alias default 18.10.0  
+nvm use default  
+node -v  
+npm -v  
+
+## Instale o Angular CLI
+
+npm uninstall -g @angular/cli  
+npm install -g @angular/cli@15.2.11  
+ng version  
 
 ## Development server
 
